@@ -72,7 +72,7 @@ function getTranscode($id, $streamnumber = null) {
         $ffmpeg .= ' -analyzeduration ' . ($trans->analyzeduration ? $trans->analyzeduration : '12000000');
         $ffmpeg .= ' -i '.'"' . "$url" . '"' ;
         $ffmpeg .= ' -user_agent "'.($setting->user_agent ? $setting->user_agent : 'FOS-Streaming').'"';
-        $ffmpeg .= ' -strict -2 -dn ';
+        $ffmpeg .= ' -dn ';
         $ffmpeg .= $trans->scale ? ' -vf scale=' . ($trans->scale ? $trans->scale : '') : '';
         $ffmpeg .= $trans->audio_codec ? ' -acodec ' . $trans->audio_codec : ''; '';
         $ffmpeg .= $trans->video_codec ? ' -vcodec ' . $trans->video_codec : '';
@@ -114,7 +114,7 @@ function getTranscodedata($id) {
     $ffmpeg .= ' -analyzeduration ' . ($trans->analyzeduration ? $trans->analyzeduration : '12000000');
     $ffmpeg .= ' -i '.'"' . "[input]" . '"' ;
     $ffmpeg .= ' -user_agent "'.($setting->user_agent ? $setting->user_agent : 'FOS-Streaming').'"';
-    $ffmpeg .= ' -strict -2 -dn ';
+    $ffmpeg .= ' -dn ';
     $ffmpeg .= $trans->scale ? ' -vf scale=' . ($trans->scale ? $trans->scale : '') : '';
     $ffmpeg .= $trans->audio_codec ? ' -acodec ' . $trans->audio_codec : ''; '';
     $ffmpeg .= $trans->video_codec ? ' -vcodec ' . $trans->video_codec : '';
