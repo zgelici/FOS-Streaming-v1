@@ -184,7 +184,7 @@ if( isset($_GET['install'])) {
         $profile2->probesize = 15000000;
         $profile2->analyzeduration = 12000000;
         $profile2->video_codec = 'copy';
-        $profile2->audio_codec = 'libvo_aacenc';
+        $profile2->audio_codec = 'aac';
         $profile2->save();
         echo "created transcode profile2 data <br>" . PHP_EOL;
     }
