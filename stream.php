@@ -100,7 +100,7 @@ if (isset($_GET['username']) && isset($_GET['password']) && isset($_GET['stream'
                                 $nextnext = sprintf($stream->id . "_%d.ts", $segment + 2);
                                 if (!file_exists($folder . $next)) {
                                     sleep(1);
-                                    $try++;
+                                    //$try++;
                                     continue;
                                 }
                                 $try = 0;
@@ -109,7 +109,7 @@ if (isset($_GET['username']) && isset($_GET['password']) && isset($_GET['stream'
                                     $line = stream_get_line($fopen, 4096);
                                     if (empty($line)) {
                                         sleep(1);
-                                        ++$try;
+                                        //++$try;
                                         continue;
                                     }
                                     echo $line;
