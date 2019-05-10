@@ -21,13 +21,13 @@
 
 
 ## Installation (64bit):
-1. `wget https://raw.githubusercontent.com/zgelici/FOS-Streaming-v1/master/install_fos_ubuntu1404_64bit.sh`
+1. `wget https://raw.githubusercontent.com/cabralfilho/FOS-Streaming-v1/master/install_fos_ubuntu1404_64bit.sh`
 2. `chmod 755 install_fos_ubuntu1404_64bit.sh`
 3. `./install_fos_ubuntu1404_64bit.sh`
 
 
 ## Installation (32bit):
-1. `wget https://raw.githubusercontent.com/zgelici/FOS-Streaming-v1/master/install_fos_ubuntu1404_32bit.sh`
+1. `wget https://raw.githubusercontent.com/cabralfilho/FOS-Streaming-v1/master/install_fos_ubuntu1404_32bit.sh`
 2. `chmod 755 install_fos_ubuntu1404_32bit.sh`
 3. `./install_fos_ubuntu1404_32bit.sh`
 
