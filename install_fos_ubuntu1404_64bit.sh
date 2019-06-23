@@ -18,7 +18,7 @@ fi
 error(){
     sleep 2
     echo -ne '\n'"--PROBLEM!--"
-    echo -ne '\n'"Support: https://github.com/zgelici/FOS-Streaming-v1" '\n'
+    echo -ne '\n'"Support: N/A" 
 exit
 }
 
