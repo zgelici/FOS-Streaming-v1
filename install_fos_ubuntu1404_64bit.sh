@@ -200,7 +200,8 @@ ffmpeg()
     ##**wget https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz -O /home/fos-streaming/ffmpeg-release-64bit-static.tar.xz
 
     wget https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz -O /home/fos-streaming/ffmpeg-release-amd64-static.tar.xz  > /dev/null 2>&1
-    tar -xJf /home/fos-streaming/ffmpeg-release-amd64-static.tar.xz -C /tmp/ > /dev/null 2>&1
+    tar -xJf /home/fos-streaming/ffmpeg-release-64bit-static.tar.xz -C /tmp/ > /dev/null 2>&1
+    ####**ffmpeg-release-64bit-static.tar.xz
     /bin/cp /tmp/ffmpeg*/ffmpeg  /usr/local/bin/ffmpeg
     /bin/cp /tmp/ffmpeg*/ffprobe /usr/local/bin/ffprobe
     chmod 755 /usr/local/bin/ffmpeg  > /dev/null 2>&1
